@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Accessible Arches Quick Search Prototype</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="node_modules/accessible-autocomplete/dist/accessible-autocomplete.min.css" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body style="font-family: 'Source Sans Pro'">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <label class="results-count-wrapper" for="my-autocomplete">Quick Search</label><span class="loading-icon hidden">... Loading</span>
+        <div id="my-autocomplete-container"></div>
+        <div aria-live="polite" id="tags"></div>
+        <div class="results-count-wrapper" role="status">Results count: <span id="results-count">0</span></div>
+        <div aria-live="polite" class="search-results"></div>
+        <script type="text/javascript" src="node_modules/accessible-autocomplete/dist/accessible-autocomplete.min.js"></script>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
